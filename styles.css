@@ -1,0 +1,171 @@
+/* Google font Red Hat Display */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Reset Style Sheet */
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+/* Variables */
+:root {
+    /* Primary Colors */
+    --primary-blue-100: hsl(225, 100%, 94%);
+    --primary-blue-700: hsl(245, 75%, 52%);
+    --blue-active: rgb(118, 108, 241);
+    /* Neutral Colors */
+    --neutral-blue-50: hsl(225, 100%, 98%);
+    --neutral-gray-600: hsl(224, 23%, 55%);
+    --neutral-blue-950: hsl(223, 47%, 23%);
+}
+
+/* FONTS */
+.red-hat-display-500 {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.red-hat-display-700 {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.red-hat-display-900 {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Body Styles */
+body {
+    background-image:url(images/pattern-background-mobile.svg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:150px;
+}
+
+/* Main */
+main {
+    background-color:white;
+    border-radius:15px;
+    box-shadow:rgb(210, 210, 210) 5px 30px 100px;
+    margin:auto;
+    width:clamp(320px, calc(299.886px + 6.286vw), 375px);
+}
+
+img {
+    border-top-right-radius: 15px;
+    border-top-left-radius:15px;
+    width:100%;
+}
+
+h1 {
+    text-align:center;
+    padding:20px 0;
+    font-size:1.25rem;
+}
+
+p {
+    padding:20px;
+    text-align:center;
+    line-height:1.5rem;
+}
+
+main > p {
+    padding:0 40px;
+    margin-bottom:35px;
+    color:var(--neutral-gray-600);
+    text-align:center;
+}
+
+.plan-information {
+    display:flex;
+    width:90%;
+    margin:auto;
+    align-items:center;
+    justify-content:space-evenly;
+    background-color:var(--neutral-blue-50);
+    border-radius:15px;
+    padding:2px;
+    font-size:0.85rem;
+}
+
+.plan-information img {
+    width:18%;
+    height:18%;
+}
+
+span {
+    color:var(--neutral-gray-600);
+} 
+
+.plan-information a {
+    padding-left:30px;
+}  
+.plan-information a:hover {
+    text-decoration:none;
+    color:var(--blue-active);
+}
+.item2 {
+    position:relative;
+    right:15px;
+}
+/* BUTTON-LIKE LINKS */
+.button-links {
+    display:block;
+    text-align:center;
+    padding:15px 25px 15px 25px;
+    text-decoration:none;
+    font-weight:700;
+    border-radius:10px;
+    width:90%;
+    margin:auto;
+    font-size:0.85rem;
+}
+.link1 {
+    background-color:var(--primary-blue-700);
+    color:white;
+    margin-top:20px;
+    box-shadow:rgb(190, 190, 190) 5px 20px 25px;
+}
+.link1:hover {
+    background-color:var(--blue-active);
+}
+
+.link2 {
+    color:var(--neutral-gray-600);
+    padding-bottom:25px;
+}
+
+.link2:hover {
+    color:black;
+}
+
+/* Attribution */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*  =====================
+    Desktop Styles 769px+
+    =====================
+*/ 
+@media (min-width:769px) {
+    body {
+    background-image:url(images/pattern-background-desktop.svg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:150px;
+}
+}
+
